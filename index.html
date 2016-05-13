@@ -14,7 +14,7 @@
 
 <header>
 	
-	<h2>THE CODE REVIEW</h2>
+	<h2>THE CODE REVIEW </h2>
 
 </header>
 <div class="container">
@@ -27,10 +27,10 @@
 <legend><span class="num">1</span>Contact Information</legend>
 
 	<label for="name" class="contact_label">Full name</label>
-	<input type="text" id="name" name="user_fullname" placeholder="Required" class="contact_info">
+	<input type="text" id="name" name="user_fullname" placeholder="Required" class="contact_info"  aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname"><span id="name-format" class="help">Format: firstname lastname</span><br>
 
 	<label for="mail" class="contact_label">Email address</label>
-	<input type="email" id="mail" name="user_email" placeholder="Required" class="contact_info">
+	<input type="email" id="mail" name="user_email" placeholder="Required" class="contact_info" required>
 
 	<label for="phone" class="contact_label">Phone Number</label>
 	<input type="tel" id="phone" name="user_phone" class="contact_info" placeholder="(111)-111-1111">
@@ -97,16 +97,17 @@
 	<option value="WY">Wyoming</option>
 </select>
 	<label for="zip" class="contact_label">Zip Code</label><br>
-	<input type="number" id="zip" name="user_zipcode" class="contact_info" placeholder="99999">
+	<input type="text" id="zip" name="user_zipcode" class="contact_info" placeholder="99999" required>
 </fieldset>
-<div class=""></div>
+
 <fieldset class="bottom">
 
 <legend><span class="num">2</span>Newsletter</legend>
 
-
-<label class="instructions">select the news letter you would like to recieve</label><br>
-
+<div class="select">
+  <div class="first col">
+   <label class="instructions">select the news letter you like</label><br>
+  
 	<input type="checkbox" id="html_news" value="interest_html" name="user_intrest">
 	<label class="checkbox" for="html_news">HTML News</label><br>
 
@@ -123,7 +124,8 @@
 	
 	<input type="radio" id="plain" value="type_text" name="format_type">
     <label for="plain" class="light"><span>plain text</span></label><br>
-
+    </div>
+<div class="sec col">
 <label class="instructions">Subscription</label><br>
 
     <input type="radio" id="month" value="type_weekly" name="sub_type">
@@ -136,13 +138,15 @@
 
 <label for="employee"  class="instructions">Employment status :</label>
 <select id="employee" name="employee_list" class="drop"> 
-	<option class="opt_title">Your employment</option>
+	<option class="opt_title">Your-employment</option>
 	<option value="EM">employed</option>
 	<option value="UN">Unemployed</option>
 	<option value="ST">Student</option>
 	<option value="CR">Contractor</option>
 
 </select>
+</div>
+</div>
 
 
 
@@ -152,20 +156,15 @@
 
  </fieldset>
 
-    <button type="submit">Sign Up</button>
-
-
-	<p>Copyright The Code Review</p>
+    <button type="submit" class="button"><span>Sign Up</span> </button>
 
 	</form>
+
 </div>
 
-
-
-
-
-
-
+<div class="foot">
+	<p>&copy;Copyright The Code Review</p>
+</div>
 
 </body>
 
