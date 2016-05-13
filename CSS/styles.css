@@ -245,7 +245,7 @@ font-weight: 500;
 
 .button:hover span:after {
   opacity: 1;
-  right: 20;
+  right: -1em;
 }
 .button:hover {
   box-shadow:  inset 5px 5px 50px #000, inset -5px -5px 50px #000;
@@ -359,7 +359,7 @@ transition: 0.5s;
     background-color: #ADBAFC;
   }
 
-
+}
 
 @media screen and (min-width: 768px) { /*regular tablets & smaller desktops*/
 
@@ -377,7 +377,7 @@ body{
 }
 
 
-
+}
 
 
 @media screen and (min-width: 1024px) { /*larger desktops*/
@@ -398,6 +398,8 @@ body{
 .col {
 width: 50%;
 margin-bottom: 20px;
+
+}
 
 }
 
