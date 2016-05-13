@@ -7,43 +7,43 @@
 	<link rel="stylesheet" type="text/css" href="CSS/koory-normalize.css">
 	<link rel="stylesheet" href="CSS/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-	
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 </head>
 <body>
 
 
 <header>
 	
-	<h1>THE CODE REVIEW</h1>
+	<h2>THE CODE REVIEW</h2>
 
 </header>
-	<div class="main-header" >
-	<h1>signup for our newsletter</h1>
+<div class="container">
+	<div class="intro" >
+	<h2>signup for our newsletter</h2>
 	<p>Get the latest news on how your code is doing right in your inbox </p>	
 </div>
 <form action="Form.html" method="post">
-<fieldset>
-<legend><span>1</span>Contact Information</legend>
+<fieldset class="top">
+<legend><span class="num">1</span>Contact Information</legend>
 
-	<label for="name">Full name</label>
-	<input type="text" id="name" name="user_fullname">
+	<label for="name" class="contact_label">Full name</label>
+	<input type="text" id="name" name="user_fullname" placeholder="Required" class="contact_info">
 
-	<label for="mail">Email address</label>
-	<input type="email" id="mail" name="user_email">
+	<label for="mail" class="contact_label">Email address</label>
+	<input type="email" id="mail" name="user_email" placeholder="Required" class="contact_info">
 
-	<label for="phone">Phone Number</label>
-	<input type="tel" id="phone" name="user_phone">
+	<label for="phone" class="contact_label">Phone Number</label>
+	<input type="tel" id="phone" name="user_phone" class="contact_info" placeholder="(111)-111-1111">
 
-	<label for="street">Street Address</label>
-	<input type="text" id="street" name="user_address">
+	<label for="street" class="contact_label">Street Address</label>
+	<input type="text" id="street" name="user_address" class="contact_info" placeholder="Required">
 
-	<label for="city">City</label>
-	<input type="text" id="city" name="user_city">
+	<label for="city" class="contact_label">City</label>
+	<input type="text" id="city" name="user_city" class="contact_info" placeholder="Required">
 
-<label for="state">State</label>
-<select id="state" name="state_list">
-
+<label for="state"  class="contact_info">State</label>
+<select id="state" name="state_list" class="drop"> 
+	<option class="opt_title">Choose-State</option>
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -96,40 +96,69 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
 </select>
-	<label for="zip">Zip Code</label>
-	<input type="number" id="zip" name="user_zipcode">
+	<label for="zip" class="contact_label">Zip Code</label><br>
+	<input type="number" id="zip" name="user_zipcode" class="contact_info" placeholder="99999">
 </fieldset>
+<div class=""></div>
+<fieldset class="bottom">
 
-<fieldset>
+<legend><span class="num">2</span>Newsletter</legend>
 
-<legend><span class="num">1</span>Newsletter</legend>
-    <label>select the news letter you would like to recieve</label>
+
+<label class="instructions">select the news letter you would like to recieve</label><br>
 
 	<input type="checkbox" id="html_news" value="interest_html" name="user_intrest">
-	<label class="light" for="html_news">HTML News</label>
+	<label class="checkbox" for="html_news">HTML News</label><br>
 
 	<input type="checkbox" id="css_news" value="interest_css" name="user_intrest">
-	<label class="light" for="cssl_news">CSS News</label>
+	<label class="checkbox" for="css_news">CSS News</label><br>
 
 	<input type="checkbox" id="javascript_news" value="interest_javascript" name="user_intrest">
-	<label class="light" for="javascript_news">Javascript News</label>
+	<label class="checkbox" for="javascript_news">JavaScript</label><br>
 
-    <label><span class="num">2</span> Newsletter format</label>
+<label class="instructions">Newsletter format</label><br>
 
-    <input type="radio" id="html" value="type_html" name="format_html">
-    <label for="html" class="light">HTML</label>
+    <input type="radio" id="html" value="type_html" name="format_type">
+    <label for="html" class="light"><span>HTML</span></label><br>
 	
-	<input type="radio" id="plain" value="type_text" name="format_text">
-    <label for="plain" class="light">plain text</label>
+	<input type="radio" id="plain" value="type_text" name="format_type">
+    <label for="plain" class="light"><span>plain text</span></label><br>
 
-    <label>Other topics you'd like to hear about</label>
-    <textarea id="bio" name="user_bio"></textarea>
+<label class="instructions">Subscription</label><br>
+
+    <input type="radio" id="month" value="type_weekly" name="sub_type">
+    <label for="month" class="light"><span>Monthly</span></label><br>
+	
+	<input type="radio" id="weekly" value="type_monthly" name="sub_type">
+    <label for="weekly" class="light"><span>Weekly</span></label><br>
+
+
+
+<label for="employee"  class="instructions">Employment status :</label>
+<select id="employee" name="employee_list" class="drop"> 
+	<option class="opt_title">Your employment</option>
+	<option value="EM">employed</option>
+	<option value="UN">Unemployed</option>
+	<option value="ST">Student</option>
+	<option value="CR">Contractor</option>
+
+</select>
+
+
+
+<label class="instructions">Other topics you'd like to hear about</label>
+
+ <textarea id="bio" name="user_bio" class="bio"></textarea>
+
+ </fieldset>
 
     <button type="submit">Sign Up</button>
 
-</fieldset>
-<p>Copyright The Code Review</p>
-</form>
+
+	<p>Copyright The Code Review</p>
+
+	</form>
+</div>
 
 
 
