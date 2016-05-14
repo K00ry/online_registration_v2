@@ -25,23 +25,23 @@
 <form action="Form.html" method="post">
 <fieldset class="top">
 <legend><span class="num">1</span>Contact Information</legend>
-
+	<div class="row">
 	<label for="name" class="contact_label">Full name</label>
-	<input type="text" id="name" name="user_fullname" placeholder="Required" class="contact_info"  aria-describedby="name-format" required><span id="name-format" class="help">Format: firstname lastname</span><br>
-
+	<input type="text" id="name" name="user_fullname" placeholder="Required" class="contact_info"  aria-describedby="name-format" required><span id="name-format" class="help">Format: firstname lastname</span></div>
+	<div class="row">
 	<label for="mail" class="contact_label">Email address</label>
-	<input type="email" id="mail" name="user_email" placeholder="Required" class="contact_info" required>
-
+	<input type="email" id="mail" name="user_email" placeholder="Required" class="contact_info" required></div>
+	<div class="row">
 	<label for="phone" class="contact_label">Phone Number</label>
-	<input type="tel" id="phone" name="user_phone" class="contact_info" placeholder="(111)-111-1111">
-
+	<input type="tel" id="phone" name="user_phone" class="contact_info" placeholder="(111)-111-1111"></div>
+	<div class="row">
 	<label for="street" class="contact_label">Street Address</label>
-	<input type="text" id="street" name="user_address" class="contact_info" placeholder="Required">
-
+	<input type="text" id="street" name="user_address" class="contact_info" placeholder="Required"></div>
+	<div class="row">
 	<label for="city" class="contact_label">City</label>
-	<input type="text" id="city" name="user_city" class="contact_info" placeholder="Required">
-
-<label for="state"  class="contact_info">State</label>
+	<input type="text" id="city" name="user_city" class="contact_info" placeholder="Required"></div>
+	<div class="row">
+<label for="state"  class="contact_label">State</label>
 <select id="state" name="state_list" class="drop"> 
 	<option class="opt_title">Choose-State</option>
 	<option value="AL">Alabama</option>
@@ -95,9 +95,10 @@
 	<option value="WV">West Virginia</option>
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
-</select>
-	<label for="zip" class="contact_label">Zip Code</label><br>
-	<input type="text" id="zip" name="user_zipcode" class="contact_info" placeholder="99999" required>
+</select></div>
+	<div class="row">
+	<label for="zip" class="contact_label zip">Zip Code</label><br>
+	<input type="text" id="zip" name="user_zipcode" class="contact_info" placeholder="99999" required></div>
 </fieldset>
 
 <fieldset class="bottom">
@@ -139,7 +140,7 @@
 <label for="employee"  class="instructions">Employment status :</label>
 <select id="employee" name="employee_list" class="drop"> 
 	<option class="opt_title">Your-employment</option>
-	<option value="EM">employed</option>
+	<option value="EM">Employed</option>
 	<option value="UN">Unemployed</option>
 	<option value="ST">Student</option>
 	<option value="CR">Contractor</option>

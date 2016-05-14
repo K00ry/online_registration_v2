@@ -57,8 +57,9 @@ header h2{
     display:none;
     font-size:90%;
     font-weight: 800;
-    color: yellow;
+    color: #605C49;
     margin-bottom:10px ;
+    font-size: 0.9em;
 }
 input:focus + .help {
     display:inline-block;
@@ -120,11 +121,12 @@ input[type="checkbox"] {
 
 
 
-input[class="contact_info"],
+.contact_info,
 .drop{
 height: 50px;
 width: 100%;
 margin: 10px 0;
+padding: 10px;
 border: none;
 border-radius :4px;
 }
@@ -200,9 +202,12 @@ textarea{
  border-radius: 5px;
 }
 
+
 p {
   text-align: center;
 }
+
+
 
 .foot p{
 
@@ -211,6 +216,9 @@ font-weight: 500;
 
 
 }
+
+
+
 /* Submit Styles */
 
 .button {
@@ -361,6 +369,10 @@ transition: 0.5s;
 
 }
 
+
+
+
+
 @media screen and (min-width: 768px) { /*regular tablets & smaller desktops*/
 
 
@@ -380,10 +392,50 @@ body{
 }
 
 
+
+
 @media screen and (min-width: 1024px) { /*larger desktops*/
 
 .container{
   width: 70%;
+}
+
+
+.row{
+  width:100%;
+  clear:both;
+}
+
+.contact_label{
+width: 25%;
+float: left;
+line-height: 2;
+margin: 15px 0;
+font-size: 1.2em;
+}
+
+.contact_info,
+.drop{
+
+width: 75%;
+float: right;
+
+}
+#zip{
+  float: left;
+  width: 30%;
+}
+
+
+.zip{
+  margin-top: 32px;
+  
+}
+
+
+#employee{
+  float: left;
+  width: 100%;
 }
 
 .select{
@@ -392,14 +444,20 @@ body{
   -webkit-flex-direction: row;
   flex-direction: row;
   justify-content: center;
-  
-
 }
+
+
 .col {
 width: 50%;
 margin-bottom: 20px;
-
 }
+
+
+
+
+
+
+
 
 }
 
