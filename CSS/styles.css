@@ -31,7 +31,7 @@ header{
  text-align: center;
 }
 
-header h2{
+header h1{
  margin: auto;
  color: yellow;
  }
@@ -45,7 +45,7 @@ header h2{
  text-align: center;
 }
 
-.intro h2{
+.intro h3{
  margin-bottom: 0;
 
 }
@@ -71,7 +71,7 @@ input:focus + .help {
 
 form{
 	width: 90%;
-    padding-top: 10px;
+  padding-top: 20px;
 	border-top: 2px solid black;
 	margin: auto;
 	margin-top: 6px;
@@ -103,7 +103,7 @@ fieldset{
 legend{
  font-size: 1.5em;
  font-weight: 900;
- margin: 10px 0;
+ margin: 20px 0;
 
 }
 
@@ -171,7 +171,8 @@ transition: all 0.3s ease;
 }
 
 
-.instructions{
+h2 ,
+.instructions {
 	display: inline-block;
 	margin: 20px 4px;
   font-weight: 800;
@@ -458,11 +459,6 @@ float: right;
 width: 50%;
 margin-bottom: 20px;
 }
-
-
-
-
-
 
 
 
